@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CookToSave — Receitas com o que você já tem em casa</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+<!-- MENU -->
+<header class="nav">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+  <div class="flex items-center gap-3">
+    <img src="cooktosave.jpeg" class="w-11 rounded-xl">
+    <span class="nav-logo-text">CookToSave</span>
+  </div>
+
+  <nav class="hidden md:flex gap-8 text-sm">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#funcionalidades">Como funciona</a>
+    <a href="#criadores">Equipe</a>
+  </nav>
+
+  <button onclick="window.location.href='index.html'" class="btn btn-gold">
+    Entrar
+  </button>
+
+</div>
+</header>
+
+
+<!-- INÍCIO -->
+<section id="inicio" class="hero min-h-screen flex items-center">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center px-6 md:px-8 py-20">
+
+  <div>
+    <h1 class="mb-6">O que tem na sua geladeira já é uma receita.</h1>
+    <p class="lede mb-10">
+      Digite os ingredientes que sobraram, em português mesmo, e descubra o que dá pra cozinhar hoje — sem desperdiçar comida nem dinheiro.
+    </p>
+    <button onclick="window.location.href='index.html'" class="btn btn-gold">
+      Começar agora
+    </button>
+  </div>
+
+  <div class="ticket hero-ticket mx-auto p-8">
+    <span class="ticket-title">Você tem</span>
+    <ul>
+      <li>2 ovos</li>
+      <li>Queijo</li>
+      <li>Cebola</li>
+      <li>Tomate</li>
+    </ul>
+    <hr class="ticket-divider">
+    <div class="result">
+      <span class="ticket-title">Sugestão</span>
+      <strong>Omelete recheada com queijo e tomate</strong>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+<!-- SOBRE -->
+<section id="sobre" class="section">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+  <img src="cooktosave.jpeg" class="about-frame">
+
+  <div>
+    <span class="eyebrow">Nossa missão</span>
+    <h2 class="section-title mt-3 mb-6">Menos desperdício, mais cozinha de verdade</h2>
+    <p class="text-lg">
+      O CookToSave nasceu para combater o desperdício de alimentos e tornar a culinária mais acessível.
+      Em vez de comprar mais um ingrediente, você aproveita o que já está na despensa — e ainda descobre receitas novas no caminho.
+    </p>
+  </div>
+
+</div>
+</section>
+
+
+<!-- COMO FUNCIONA (processo real de 3 passos) -->
+<section id="funcionalidades" class="section bg-forest-soft">
+<div class="max-w-7xl mx-auto">
+
+  <span class="eyebrow">Como funciona</span>
+  <h2 class="section-title mt-3 mb-16">Três passos até o prato pronto</h2>
+
+  <div class="grid md:grid-cols-3 gap-10 mb-20">
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <h3 class="text-xl mb-2">Diga o que você tem</h3>
+      <p>Digite os ingredientes em português — é só listar o que você tem, separado por vírgula.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-number">2</span>
+      <h3 class="text-xl mb-2">Veja receitas de verdade</h3>
+      <p>Ingredientes, quantidades, modo de preparo, porções e informações nutricionais de cada receita.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-number">3</span>
+      <h3 class="text-xl mb-2">Salve o que valeu a pena</h3>
+      <p>Guarde suas receitas favoritas para não perder aquela combinação que deu certo.</p>
+    </div>
+
+  </div>
+
+  <ul class="extra-list max-w-3xl">
+    <li>
+      <span class="extra-icon">🤖</span>
+      <div>
+        <h3 class="text-lg mb-1">Sugestões inteligentes</h3>
+        <p>A busca prioriza receitas que aproveitam ao máximo o que você já tem, reduzindo o que falta comprar.</p>
+      </div>
+    </li>
+    <li>
+      <span class="extra-icon">🇧🇷</span>
+      <div>
+        <h3 class="text-lg mb-1">Receitas brasileiras de verdade</h3>
+        <p>Nada de receita traduzida do inglês: ingredientes, medidas e modo de preparo já nascem em português.</p>
+      </div>
+    </li>
+    <li>
+      <span class="extra-icon">☁️</span>
+      <div>
+        <h3 class="text-lg mb-1">Favoritos salvos na sua conta</h3>
+        <p>Seus favoritos e sua lista de ingredientes ficam salvos na conta, disponíveis em qualquer aparelho.</p>
+      </div>
+    </li>
+  </ul>
+
+</div>
+</section>
+
+
+<!-- CRIADORES -->
+<section id="criadores" class="section">
+<div class="max-w-7xl mx-auto">
+
+  <span class="eyebrow">Quem construiu</span>
+  <h2 class="section-title mt-3 mb-16">Equipe do projeto</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="team-card">
+      <img src="imagens/joao-victor.jpeg" class="team-avatar mb-6">
+      <h3 class="text-xl mb-1">João Victor</h3>
+      <p class="text-gold font-semibold mb-3">Desenvolvedor Front-End</p>
+      <p>Responsável pela criação da interface e experiência do usuário.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="imagens/theo.jpeg" class="team-avatar mb-6">
+      <h3 class="text-xl mb-1">Théo Guimarães</h3>
+      <p class="text-gold font-semibold mb-3">Desenvolvedor Back-End</p>
+      <p>Responsável pela integração do sistema e banco de dados.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="imagens/joao-gilberto.jpeg" class="team-avatar mb-6">
+      <h3 class="text-xl mb-1">João Gilberto</h3>
+      <p class="text-gold font-semibold mb-3">Pesquisador</p>
+      <p>Responsável pelo levantamento das necessidades e objetivos do projeto.</p>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- POR QUE CRIAMOS -->
+<section class="quote-section section text-center">
+  <blockquote>
+    "Criamos o CookToSave para ajudar as pessoas a aproveitarem melhor os ingredientes que já têm em casa, transformando-os em receitas deliciosas e acessíveis."
+  </blockquote>
+</section>
+
+
+<!-- CHAMADA FINAL -->
+<section class="section text-center">
+<div class="max-w-3xl mx-auto">
+  <h2 class="section-title mb-6">Pronto para abrir a geladeira com outros olhos?</h2>
+  <p class="text-lg mb-10">Junte-se ao CookToSave e descubra 100 receitas brasileiras.</p>
+  <button onclick="window.location.href='index.html'" class="btn btn-primary">
+    Entrar no CookToSave
+  </button>
+</div>
+</section>
+
+
+<!-- RODAPÉ -->
+<footer class="footer py-10">
+<div class="max-w-7xl mx-auto text-center px-6">
+  <p class="nav-logo-text mb-3" style="color:var(--cream)">CookToSave</p>
+  <p>© 2026 — Todos os direitos reservados.</p>
+</div>
+</footer>
+
+</body>
+</html>

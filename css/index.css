@@ -1,0 +1,39 @@
+body{
+  background:
+    radial-gradient(ellipse 800px 500px at 85% 15%, rgba(217,166,46,.14), transparent 60%),
+    var(--forest);
+  min-height:100vh;
+}
+
+.auth-ticket{ width:100%; max-width:26rem; padding:3rem 2.5rem 2.5rem; }
+
+.auth-logo{
+  width:64px;
+  border-radius:16px;
+  margin:0 auto 1.25rem;
+}
+
+.auth-ticket h1{ font-size:2.2rem; }
+
+.field-label{
+  font-size:.85rem;
+  font-weight:600;
+  color:var(--ink-soft);
+  margin-bottom:.4rem;
+  display:block;
+}
+
+.link-esqueci-senha{
+  background:none;
+  border:none;
+  padding:0;
+  font-family:'Inter', sans-serif;
+  font-size:.8rem;
+  font-weight:600;
+  color:var(--gold-dark);
+  cursor:pointer;
+  text-decoration:underline;
+}
+.link-esqueci-senha:hover{
+  color:var(--forest);
+}

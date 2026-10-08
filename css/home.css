@@ -1,0 +1,141 @@
+/* ============ NAV ============ */
+.nav{
+  background:var(--forest);
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index:50;
+}
+.nav a{ color:var(--cream); opacity:.85; font-weight:500; }
+.nav a:hover{ opacity:1; }
+.nav-logo-text{
+  font-family:'Fraunces', serif;
+  font-weight:600;
+  font-size:1.5rem;
+  color:var(--cream);
+}
+
+/* ============ HERO ============ */
+.hero{
+  background:
+    radial-gradient(ellipse 900px 500px at 15% 20%, rgba(217,166,46,.12), transparent 60%),
+    var(--forest);
+  padding-top:7rem;
+}
+.hero h1{
+  color:var(--cream);
+  font-size:clamp(2.6rem, 5vw, 4.2rem);
+}
+.hero p.lede{
+  color:rgba(251,248,242,.75);
+  font-size:1.2rem;
+  max-width:38ch;
+}
+
+/* Ticket dentro do hero: ilustra a proposta (ingredientes -> receita) */
+.hero-ticket{ color:var(--ink); max-width:360px; }
+.hero-ticket .ticket-title{
+  font-size:.8rem;
+  color:var(--ink-soft);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.hero-ticket ul{ list-style:none; margin:1rem 0; padding:0; }
+.hero-ticket li{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.4rem 0;
+  color:var(--ink);
+  font-size:.98rem;
+}
+.hero-ticket li::before{
+  content:"";
+  width:8px; height:8px;
+  border-radius:50%;
+  background:var(--sage);
+  flex:none;
+}
+.hero-ticket .result{
+  background:var(--forest-soft);
+  border-radius:10px;
+  padding:1rem 1.2rem;
+  margin-top:.5rem;
+}
+.hero-ticket .result strong{
+  font-family:'Fraunces', serif;
+  color:var(--forest);
+  font-size:1.15rem;
+  display:block;
+}
+
+/* ============ SECTIONS ============ */
+.section{ padding:7rem 8%; }
+.section-title{ font-size:clamp(2rem, 3.5vw, 2.8rem); }
+.eyebrow{
+  color:var(--gold-dark);
+  font-weight:600;
+  font-size:.95rem;
+}
+
+/* Sobre */
+.about-frame{
+  border-radius:6px;
+  overflow:hidden;
+  border:10px solid var(--white);
+  box-shadow:0 25px 50px -20px rgba(22,40,28,.25);
+}
+
+/* Como funciona (processo real de 3 passos) */
+.step{
+  border-top:1.5px solid var(--line);
+  padding-top:1.75rem;
+}
+.step-number{
+  font-family:'Fraunces', serif;
+  font-size:2.6rem;
+  color:var(--sage);
+  display:block;
+  margin-bottom:.5rem;
+}
+
+/* Recursos extras (lista compacta, sem virar card genérico) */
+.extra-list{ list-style:none; margin:0; padding:0; }
+.extra-list li{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  padding:1.1rem 0;
+  border-top:1.5px solid var(--line);
+}
+.extra-list li:last-child{ border-bottom:1.5px solid var(--line); }
+.extra-icon{ font-size:1.3rem; line-height:1.4; flex:none; }
+
+/* Equipe */
+.team-card{
+  background:var(--white);
+  border-radius:16px;
+  padding:2.25rem;
+  border:1.5px solid var(--line);
+}
+.team-avatar{
+  width:88px; height:88px;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center 20%;
+  border:3px solid var(--forest-soft);
+}
+
+/* Por que criamos - quote em bloco escuro */
+.quote-section{ background:var(--forest); color:var(--cream); }
+.quote-section blockquote{
+  font-family:'Fraunces', serif;
+  font-size:clamp(1.6rem, 3vw, 2.4rem);
+  font-weight:500;
+  line-height:1.35;
+  color:var(--cream);
+  max-width:44ch;
+  margin:0 auto;
+}
+
+/* Footer */
+.footer{ background:var(--forest); color:rgba(251,248,242,.6); }

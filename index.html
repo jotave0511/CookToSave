@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar — CookToSave</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body class="flex items-center justify-center p-6">
+
+<div class="ticket auth-ticket">
+
+  <div class="text-center mb-8">
+
+    <img src="cooktosave.jpeg" class="auth-logo">
+
+    <h1 class="mb-2">CookToSave</h1>
+
+    <p class="text-muted">Receitas com o que você já tem em casa</p>
+
+  </div>
+
+  <label class="field-label" for="email">Email</label>
+  <input id="email" type="email" placeholder="voce@email.com" class="mb-4">
+
+  <div class="flex justify-between items-center mb-2">
+    <label class="field-label" for="senha" style="margin-bottom:0;">Senha</label>
+    <button type="button" onclick="recuperarSenha()" class="link-esqueci-senha">
+      Esqueci minha senha
+    </button>
+  </div>
+  <input id="senha" type="password" placeholder="Sua senha" class="mb-6">
+
+  <button type="button" onclick="login()" class="btn btn-primary btn-block mb-3">
+    Entrar
+  </button>
+
+  <button type="button" onclick="cadastrar()" class="btn btn-outline btn-block">
+    Criar conta
+  </button>
+
+  <p id="mensagem" class="text-center text-muted mt-4" style="min-height:1.5rem;"></p>
+</div>
+
+<script type="module" src="js/index.js"></script>
+
+</body>
+</html>
