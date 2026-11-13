@@ -22,7 +22,7 @@ A plataforma permite criar uma conta, selecionar ingredientes, pesquisar receita
 - Spoonacular API
 
   ## 🌐 Acesse o projeto
-[CookToSave — Acessar site](https://cooktosave.vercel.app/)
+[CookToSave — Acessar site](https://cooktosave.vercel.app/home.html)
 
 ## 🚀 Como executar o projeto
 
